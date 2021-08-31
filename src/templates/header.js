@@ -1,9 +1,9 @@
-const header = () => {
+const Header = () => {
     const view = `
         <div class="header-main">
             <div class="header-logo">
                 <h1>
-                    <a>Cientificos.co</a>
+                    <a href="">Cientificos.co</a>
                 </h1>
             </div>
 
@@ -13,6 +13,6 @@ const header = () => {
         </div>
     `;
     return view;
-}
+};
 
-export default header;
+export default Header;

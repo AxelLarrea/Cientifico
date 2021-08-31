@@ -1,18 +1,23 @@
-const header = () => {
+const character = () => {
     const view = `
-        <div class="header-main">
-            <div class="header-logo">
-                <h1>
-                    <a>Cientificos.co</a>
-                </h1>
-            </div>
+        <div class="character-inner">
+            <article class="character-card">
+                <img src="iamge" alt="name">
+                <h2>Name<(h2)>
+            </article>
 
-            <div class="header-nav">
+            <article class="character-card">
+                <h3>Episodes:</h3>
+                <h3>Status:</h3>
+                <h3>Species:</h3>
+                <h3>Gender:</h3>
+                <h3>Origin:</h3>
+                <h3>Location:</h3>
                 <a href="#/">Home</a>
-            </div>
+            </article>
         </div>
     `;
     return view;
-}
+};
 
-export default header;
+export default character;
