@@ -1,9 +1,16 @@
-import getHash from "./getHash";
 
 const API = "https://rickandmortyapi.com/api/character/"
 
-ID = getHash();
+const getData = async (id) => {
 
-const apiURL = `${API}${ID}`;
+    const apiURL = id ? `${API}${id}` : API;
+    try{
+        const response = await fetch(apiURL);
+        const data = await response.json();
+        return data;
+    } catch(error){
+        console.error('Fetch error', error)
+    }
+};
 
-console.log(apiURL);
+export default getData;
