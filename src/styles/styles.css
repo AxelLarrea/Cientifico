@@ -38,11 +38,12 @@ body {
     grid-gap: 1,5rem;
     grid-row-gap: 1,5rem;
     display: grid;
+    grid-template-columns: minmax(auto, 400px);
 }
 
 .character-card {
     text-decoration: none;
-    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
     border-radius: 5px;
     margin: 0 0 20px 0;
     display: block;
@@ -57,9 +58,10 @@ body {
 }
 
 .character-card img {
-    width: 100%;
     height: auto;
     border-radius: 5px 5px 0 0;
+    margin: 10px 0 0 10px;
+    
 }
 
 .character-card h3 {
