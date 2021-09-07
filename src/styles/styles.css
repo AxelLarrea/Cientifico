@@ -34,11 +34,8 @@ body {
 }
 
 .character-inner {
-    grid-template-columns: 1fr, 2fr;
-    grid-gap: 1,5rem;
-    grid-row-gap: 1,5rem;
     display: grid;
-    grid-template-columns: minmax(auto, 400px);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .character-card {
@@ -60,15 +57,15 @@ body {
 .character-card img {
     height: auto;
     border-radius: 5px 5px 0 0;
-    margin: 10px 0 0 10px;
-    
+    display: block;
+    margin: auto;
 }
 
 .character-card h3 {
     font-size: 18px;
     font-weight: 400;
     text-align: left;
-    margin: 20px;
+    margin: 30px;
 }
 
 .character-item {
@@ -85,4 +82,13 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px 5px 0 0;
+}
+
+.character-item h2 {
+    text-align: center;
+}
+
+.character-item a {
+    text-decoration: none;
+    color: #153021;
 }
